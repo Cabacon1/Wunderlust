@@ -12,7 +12,11 @@
     <a href="#main-content" id="skipLink">Skip to main content</a>
     <header>
         <h1>Wunderlust Travel</h1>
-        <a><img></a>
+        <img alt="Logo" srcset="
+            images\logo-S.png 320w,
+            images\logo-M.png 780w,
+            images\logo-L.png 1024w
+            ">
         <!-- Majorca / Navigation -->
         <nav>
             <ul>
@@ -24,26 +28,26 @@
         </nav>
     </header>
 
-    <main id="content">
+    <main id="main-content">
         <h2>Majorca</h2>
         <p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged
             mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are
             overflowing with character, while its beaches are famous all around the world, making it one of the most
             sought-after summer destinations.</p>
         <img alt="Majorca Waves" srcset="
-            images\majorca-waves-S.png, 320w
-            images\majorca-waves-M.png, 780w
-            images\majorca-waves-L.png, 1024w
+            images\majorca-waves-S.png 320w,
+            images\majorca-waves-M.png 780w,
+            images\majorca-waves-L.png 1024w
             ">
         <img alt="Majorca Beach" srcset="
-            images\majorca-beach-S.png, 320w
-            images\majorca-beach-M.png, 780w
-            images\majorca-beach-L.png, 1024w
+            images\majorca-beach-S.png 320w,
+            images\majorca-beach-M.png 780w,
+            images\majorca-beach-L.png 1024w
             ">
         <img alt="Majorca Cove" srcset="
-            images\majorca-cove-S.png, 320w
-            images\majorca-cove-M.png, 780w
-            images\majorca-cove-L.png, 1024w
+            images\majorca-cove-S.png 320w,
+            images\majorca-cove-M.png 780w,
+            images\majorca-cove-L.png 1024w
             ">
         <!-- <picture>
             <source media="(min-width: 1264px)" srcset="majorca-waves-S.png">
@@ -63,9 +67,9 @@
             <source media="(max-width: 675px)" src="majorca-cove-L.png">
             <img alt="Majorca Cove">
         </picture> -->
-        <section id="Plan">
+        <section class="plan">
             <h3>Plan Your Trip</h3>
-            <section>
+            <div>
                 <h4>How to Get there</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="150"
                     height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none"
@@ -79,9 +83,9 @@
                         stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <polyline points="9 6 15 12 9 18" /></a>
-            </section>
+            </div>
             <!-- Places to stay -->
-            <section>
+            <div>
                 <h4>Place to stay</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="150"
                     height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none"
@@ -98,9 +102,9 @@
                         <polyline points="9 6 15 12 9 18" />
                     </svg>
                 </a>
-            </section>
+            </div>
             <!-- Things to do -->
-            <section>
+            <div>
                 <h4>Things to do</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sailboat" width="150"
                     height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none"
@@ -120,9 +124,9 @@
                         <polyline points="9 6 15 12 9 18" />
                     </svg>
                 </a>
-            </section>
+            </div>
             <!-- Where to eat -->
-            <section>
+            <div>
                 <h4>Where to Eat</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools-kitchen-2" width="150"
                     height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none"
@@ -139,63 +143,63 @@
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <polyline points="9 6 15 12 9 18" />
                     </svg></a>
-            </section>
+            </div>
         </section>
         <!-- Testimonials -->
-        <section id="testimonials">
+        <section class="testimonials">
             <h3>Testimonials</h3>
-            <section>
+            <div>
                 <h4>Miranda Blake</h4>
                 <figure>
                     <img alt="mirandaBlake" srcset="
-                            images\miranda-blake-S.png, 320w
-                            images\miranda-blake-M.png, 780w
-                            images\miranda-blake-L.png, 1024w
+                            images\miranda-blake-S.png 320w,
+                            images\miranda-blake-M.png 780w,
+                            images\miranda-blake-L.png 1024w
                             ">
                     <figcaption>Traveling From: London, England</figcaption>
                 </figure>
                 <blockquote>“I traveled here for business, but my stay was extended. Now it is my home.”</blockquote>
-            </section>
-            <section>
+            </div>
+            <div>
                 <h4>Max Winter</h4>
                 <figure>
                     <img alt="mirandaBlake" srcset="
-                            images\max-winter-S.png, 320w
-                            images\max-winter-M.png, 780w
-                            images\max-winter-L.png, 1024w
+                            images\max-winter-S.png 320w,
+                            images\max-winter-M.png 780w,
+                            images\max-winter-L.png 1024w
                             ">
                     <figcaption>Traveling From: Berlin, Germany</figcaption>
                 </figure>
                 <blockquote>“Great escape from my reality. Beautiful sunsets, wonderful people, great beer. ”
                 </blockquote>
-            </section>
-            <section>
+            </div>
+            <div>
                 <h4>Inés Villegoes</h4>
                 <figure>
                     <img alt="Inés Villegoes" srcset="
-                            images\ines-villegoes-S.png, 320w
-                            images\ines-villegoes-M.png, 780w
-                            images\ines-villegoes-L.png, 1024w
+                            images\ines-villegoes-S.png 320w,
+                            images\ines-villegoes-M.png 780w,
+                            images\ines-villegoes-L.png 1024w
                             ">
                     <figcaption>Traveling From: Barcelona, Spain</figcaption>
                 </figure>
                 <blockquote>“A very safe environment for all travelers.”</blockquote>
-            </section>
-            <section>
+            </div>
+            <div>
                 <h4>Carmen Lorenzo</h4>
                 <figure>
                     <img alt="Carmen Lorenzo" srcset="
-                            images\carmen-lorenzo-S.png, 320w
-                            images\carmen-lorenzo-M.png, 780w
-                            images\carmen-lorenzo-L.png, 1024w
+                            images\carmen-lorenzo-S.png 320w,
+                            images\carmen-lorenzo-M.png 780w,
+                            images\carmen-lorenzo-L.png 1024w
                             ">
                     <figcaption>Traveling From: Madrid, Spain</figcaption>
                 </figure>
                 <blockquote>“Live, laugh, love-- everything you need in Majorca.”</blockquote>
-            </section>
+            </div>
         </section>
-        <section id="about">
-            <section id="size">
+        <section class="about">
+            <div id="size">
                 <h3>Size</h3>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-2" width="100"
                     height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none"
@@ -208,37 +212,43 @@
                     <path d="M7 16l-1.5 -1.5" />
                 </svg>
                 <p>Size: 1,405 miles squared</p>
-            </section>
-            <section id="elevation">
+            </div>
+            <div id="elevation">
                 <h4>Elevation</h4>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-bar" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                  <line x1="12" y1="21" x2="12" y2="3" />
-                  <path d="M15 6l-3 -3l-3 3" />
-                  <line x1="9" y1="21" x2="15" y2="21" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-bar" width="100"
+                    height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="12" y1="21" x2="12" y2="3" />
+                    <path d="M15 6l-3 -3l-3 3" />
+                    <line x1="9" y1="21" x2="15" y2="21" />
                 </svg>
-                <p>Elevation: 4,741 feet</p>                
-            </section>
-            <section>
+                <p>Elevation: 4,741 feet</p>
+            </div>
+            <div>
                 <h4>Location</h4>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="12" cy="11" r="3" />
-                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="100"
+                    height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                 </svg>
                 <p>Location: Mediterranean</p>
-            </section>
-            <section id="population">
+            </div>
+            <div id="population">
                 <h4>Population</h4>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="9" cy="7" r="4" />
-                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="100"
+                    height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
                 </svg>
                 <p>Population: 923,608</p>
-            </section>
+            </div>
         </section>
         <section id="contact">
             <h3>Contact Us</h3>
@@ -254,7 +264,7 @@
                     <input type="radio" name="Preferred-contact" value="text">
                     <label>Text</label>
                     <input type="radio" name="Preferred-contact" value="phone" required>
-                    <label>Phone</label> 
+                    <label>Phone</label>
                 </fieldset>
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="Email" value="Enter Email Address">
@@ -267,26 +277,26 @@
                     <input type="radio" name="Destination" value="Granada">
                     <label>Granada</label>
                     <input type="radio" name="Destination" value="Ibiza" required>
-                    <label>Ibiza</label> 
+                    <label>Ibiza</label>
                     <input type="radio" name="Destination" value="Madrid">
                     <label>Madrid</label>
                     <input type="radio" name="Destination" value="Majorca">
                     <label>Majorca</label>
                     <input type="radio" name="Destination" value="Seville" required>
-                    <label>Seville</label> 
+                    <label>Seville</label>
                     <input type="radio" name="Destination" value="Tenerife" required>
-                    <label>Tenerife</label> 
+                    <label>Tenerife</label>
                     <input type="radio" name="Destination" value="Valencia" required>
-                    <label>Valencia</label> 
+                    <label>Valencia</label>
                 </fieldset>
                 <fieldset>
                     <legend>Travel Time</legend>
                     <input type="radio" name="Travel Time" value="Fall">
                     <label>Fall</label>
                     <input type="radio" name="Travel Time" value="Winter" required>
-                    <label>Winter</label> 
+                    <label>Winter</label>
                     <input type="radio" name="Travel Time" value="Spring" required>
-                    <label>Spring</label> 
+                    <label>Spring</label>
                     <input type="radio" name="Travel Time" value="Summer" required>
                     <label>Summer</label>
                     <input type="radio" name="Travel Time" value="Flexible" required>
@@ -298,8 +308,9 @@
     </main>
 </body>
 <footer>
-    <small>Copyright 2021 Wunderlust</small>
-    <small>Privacy Statement</small>
-    <small>Terms of Service</small>
+    <p><small>Copyright 2021 Wunderlust</small></p>
+    <p><small>Privacy Statement</small></p>
+    <p><small>Terms of Service</small></p>
 </footer>
+
 </html>

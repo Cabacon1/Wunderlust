@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <a href="#main-content" id="skipLink">Skip to main content</a>
     <header>
         <h1>Wunderlust Travel</h1>
         <a><img></a>
@@ -239,11 +240,66 @@
                 <p>Population: 923,608</p>
             </section>
         </section>
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                <label for="firstName">First Name<span aria-hidden="true" class="required">*</span></label>
+                <input type="text" id="firstName" name="First Name" value="Enter first name" required>
+                <label for="lastName">Last Name<span aria-hidden="true" class="required">*</span></label>
+                <input type="text" id="lastName" name="Last Name" value="Enter last name" required>
+                <fieldset>
+                    <legend>Contact Method<span aria-hidden="true" class="required">*</span></legend>
+                    <input type="radio" name="Preferred-contact" value="email">
+                    <label>Email</label>
+                    <input type="radio" name="Preferred-contact" value="text">
+                    <label>Text</label>
+                    <input type="radio" name="Preferred-contact" value="phone" required>
+                    <label>Phone</label> 
+                </fieldset>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="Email" value="Enter Email Address">
+                <label for="phone">Phone Number</label>
+                <input type="phone" id="phone" name="Phone" value="Enter Phone Number">
+                <fieldset>
+                    <legend>Destination</legend>
+                    <input type="radio" name="Destination" value="Barcelona">
+                    <label>Barcelona</label>
+                    <input type="radio" name="Destination" value="Granada">
+                    <label>Granada</label>
+                    <input type="radio" name="Destination" value="Ibiza" required>
+                    <label>Ibiza</label> 
+                    <input type="radio" name="Destination" value="Madrid">
+                    <label>Madrid</label>
+                    <input type="radio" name="Destination" value="Majorca">
+                    <label>Majorca</label>
+                    <input type="radio" name="Destination" value="Seville" required>
+                    <label>Seville</label> 
+                    <input type="radio" name="Destination" value="Tenerife" required>
+                    <label>Tenerife</label> 
+                    <input type="radio" name="Destination" value="Valencia" required>
+                    <label>Valencia</label> 
+                </fieldset>
+                <fieldset>
+                    <legend>Travel Time</legend>
+                    <input type="radio" name="Travel Time" value="Fall">
+                    <label>Fall</label>
+                    <input type="radio" name="Travel Time" value="Winter" required>
+                    <label>Winter</label> 
+                    <input type="radio" name="Travel Time" value="Spring" required>
+                    <label>Spring</label> 
+                    <input type="radio" name="Travel Time" value="Summer" required>
+                    <label>Summer</label>
+                    <input type="radio" name="Travel Time" value="Flexible" required>
+                    <label>Flexible</label>
+                </fieldset>
+                <input type="submit" name="submit">
+            </form>
+        </section>
     </main>
 </body>
-
 <footer>
-
+    <small>Copyright 2021 Wunderlust</small>
+    <small>Privacy Statement</small>
+    <small>Terms of Service</small>
 </footer>
-
 </html>

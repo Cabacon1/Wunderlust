@@ -238,5 +238,35 @@ img{
 #testimonials {
 	display: grid;
 	grid-template-columns: 1fr 5fr 1fr;
+	grid-column: 1/-1;
+	justify-content: center;
+	font-size: 2rem;
+	padding-bottom: 1rem;
 
+}
+#testimonials h4{
+	grid-column: 1/-1;
+	font-size: 1.5rem;
+	font-weight: bold;
+	/* padding: 10px; */
+	margin: 0 auto
+}
+#testimonials div{
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-column: 1/-1;
+	grid-gap: 0.5em;
+	justify-content: center;
+
+}
+#testimonials div section{
+	display: grid;
+	grid-column: 2/3;
+	justify-content: center;
+	text-align: center;
+	font-size: small;
+}
+#testimonials img {
+	width: 80%;
+	justify-self: center;
 }

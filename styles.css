@@ -310,3 +310,69 @@ img{
 	height: 6rem;
 	justify-content: center;
 }
+/* ~~~~~~~~~~~~~~~~~ contact us ~~~~~~~~~~~~~~~~~~~ */
+#contact {
+	display: grid;
+	grid-template-columns: 10% 80% 10%;
+}
+#contact h3 {
+	font-size: 2rem;
+	grid-column: 1/-1;
+}
+#contact span {
+	font-family: "Montserrat";
+	font-size: 1rem;
+	/* font-style: italic; */
+}
+#contact form{
+	grid-column: 2/3;
+}
+
+/* #contact form div{
+	padding: 0 1em;
+} */
+
+#contact label {
+	display: block;
+	font-weight: bold;
+	align-items: center;
+}
+
+#contact form input , select {
+	display: inline-block;
+	padding: 1em;
+	margin-bottom: 1em;
+	color: var(--dark-gray);
+	border: 2px solid var(--purple);
+	width: 90%;
+}
+
+[class="form-required"] {
+	font-style: italic;
+}
+
+[class="required"] {
+	color: var(--purple);
+}
+#contact form fieldset input{
+	width: 3rem;
+	height:3rem;
+	margin-right: 1em;
+	accent-color: var(--purple);
+}
+#contact form fieldset label {
+	display: flex;
+	font-weight: normal;
+	font-style:normal;
+}
+
+legend{
+	font-weight: bold;
+}
+select {
+	-webkit-box-sizing: content-box;
+	accent-color: var(--purple);
+}
+/* select a[value]{
+	fill: var(--dark-gray);
+} */

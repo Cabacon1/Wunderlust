@@ -197,6 +197,9 @@ form {
 img{
 	width: 100%;
 }
+a {
+	font-family: "Montserrat";
+}
 
 /* PLAN */
 #plan {
@@ -342,9 +345,8 @@ img{
 	display: inline-block;
 	padding: 1em;
 	margin-bottom: 1em;
-	color: var(--dark-gray);
 	border: 2px solid var(--purple);
-	width: 90%;
+	width: 70vw;
 }
 
 [class="form-required"] {
@@ -369,10 +371,36 @@ img{
 legend{
 	font-weight: bold;
 }
-select {
+.custom-select select{
 	-webkit-box-sizing: content-box;
-	accent-color: var(--purple);
 }
-/* select a[value]{
-	fill: var(--dark-gray);
+/* select {
+	-webkit-box-sizing: content-box;
 } */
+
+/* [selected]{
+	color: var(--dark-gray);
+} */
+select ~ option {
+	color: var(--dark-gray);
+}
+
+#mySubmit{
+	background-color: var(--purple);
+	color: var(--white);
+	display: block;
+	width: 50vw;
+}
+/* ~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~ */
+footer{
+	padding: 1rem;
+	background-color: var(--light-gray);
+	text-align: center;
+}
+footer a, footer p{
+	display: block;
+	padding: .5rem;
+	font-family: "Montserrat";
+	text-decoration: none;
+	color: var(--black);
+}

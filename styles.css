@@ -570,6 +570,9 @@ footer a, footer p{
 	#intro{
 		padding:  1rem 10vw;
 	}
+	#intro h2, p {
+		padding: 0;
+	}
 	#intro #img-grid{
 		display: grid;
 		grid-template-areas: "a b"
@@ -581,14 +584,26 @@ footer a, footer p{
 	}
 	
 	/* ~~~~~~~~~~~~~~~~~~~~~ PLAN ~~~~~~~~~~~~~~~~~~~ */
-
+	#plan {
+		display: grid;
+		grid-template-columns: auto 40vw 40vw auto;
+		padding:  1rem 10vw;
+	}
+	#plan h3{
+		padding: 0;
+		margin: 0;
+		grid-column: 1/-1;
+	}
 	#plan div {
 		display: grid;
-		grid-template-columns: 10vw 40vw 40vw 10vw;
-		grid-template-rows: 2fr 2fr;
+		grid-template-columns: 1fr 1fr;
+		grid-column: 2/4;
 	}
 	#plan div section{
-		display: grid;
+		grid-column: auto;
+		max-width: 100%;
 	}
+
+	/* ~~~~~~~~~~~~~~~ Testimonials ~~~~~~~~~~~~~~~~ */
 
 }

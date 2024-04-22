@@ -150,6 +150,9 @@ table {
 	--light-gray: #EAEAEA;
 	--white: #FFFFFF;
 	--black: #000000;
+	--bar-width:60px;
+	--bar-height:8px;
+	--hamburger-gap:6px;
 }
 
 #skip {
@@ -167,11 +170,25 @@ table {
 	height: auto;
 }
 
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+	}
+
+/*  */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	color: var(--black);
 	line-height: 1.35;
-	box-sizing:border-box;
 	margin: 20px 0;
 	padding:0;
 }
@@ -182,7 +199,7 @@ h2,
 h3 {
 	font-family: "Molle";
 	margin: auto;
-	padding: 1rem;
+	padding-left: 1rem;
 }
 
 h4,
@@ -193,6 +210,7 @@ nav,
 button,
 form {
 	font-family: "Montserrat";
+	padding-left: 1rem;
 }
 img{
 	width: 100%;
@@ -200,6 +218,103 @@ img{
 a {
 	font-family: "Montserrat";
 }
+
+h1{
+	text-align: left;
+	font-size: 3.5rem;
+}
+header{
+	display: grid;
+	grid-template-columns: repeat(2, 50vw);
+	grid-template-rows: auto auto auto;
+	justify-items: stretch;
+}
+header h1{
+	grid-column: 1;
+	grid-row-start: 2;
+}
+
+header > p {
+	grid-row-start: 3;
+	grid-column: 1/-1;
+	color: var(--dark-gray);
+}
+
+header ~ img {
+	width: fit-content;
+	grid-column: 1/2;
+}
+header nav{
+	grid-column:2/-1;
+
+}
+
+h2{
+	font-size: 3.5rem;
+}
+/* ~~~~~~~~~~ Hamburger ~~~~~~~~~~~~~~~~~ */
+#menu-toggle::before,
+#menu-toggle::after,
+#menu-toggle input{
+	content:"";
+	background-color: var(--yellow);
+}
+
+#menu-toggle {
+	/* display: inline-block;*/
+	content:"";
+	width: 50vw;
+	background-color: var(--yellow);
+	color: var(--black);
+	text-align: center;
+	justify-self: right;
+}
+
+#menu-toggle input {
+	display: none;
+}
+#menu-toggle label {
+	cursor: pointer;
+	display: block;
+	color: var(--black);
+	font-weight: bold;
+	padding: 1rem;
+}
+
+#menu-toggle ul{
+	max-height: 0;
+	width: 100vw;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	overflow: hidden;
+	background-color: var(--dark-gray);
+	text-align: center;
+}
+
+#menu-toggle ul li{
+	max-width: 100%;
+	background-color: var(--blue);
+	padding: 2rem;
+	border-bottom: 1px solid var(--black);
+}
+
+#menu-toggle ul li a {
+	text-decoration: none;
+	color: var(--black);
+	text-align: center;
+}
+#menu-toggle input:checked ~ ul { 
+	max-height: 100%;
+	max-width: 100vw;
+}
+
+#menu-toggle input:checked { 
+	width: 100vw;
+	background-color: var(--dark-gray);
+	color: var(--white);
+}
+
 
 /* PLAN */
 #plan {
@@ -272,13 +387,13 @@ a {
 	font-size: small;
 }
 #testimonials img {
-	width: 80%;
+	max-width: 80%;
 	justify-self: center;
 }
 /* About */
 #about{
 	display: grid;
-	grid-template-columns: 10% 80% 10%;
+	grid-template-columns: 10vw 80vw 10vw;
 	text-align: center;
 	background-color: var(--blue);
 	font-size: 2rem;
@@ -296,10 +411,11 @@ a {
 	color: var(--dark-gray);
 }
 #about div {
-	display: grid;
-	grid-template-columns: 50% 50%;
+	display: inline-grid;
+	grid-template-columns: 50vw auto;
 	grid-template-rows: repeat(2 ,minmax(100px,2fr));
 	grid-column: 1/-1;
+	justify-content: center
 }
 #about section{
 	padding: 20px;
@@ -310,13 +426,13 @@ a {
 	font-size: 1rem;
 }
 #about img {
-	height: 6rem;
+	height: 5rem;
 	justify-content: center;
 }
 /* ~~~~~~~~~~~~~~~~~ contact us ~~~~~~~~~~~~~~~~~~~ */
 #contact {
 	display: grid;
-	grid-template-columns: 10% 80% 10%;
+	grid-template-columns: 10vw 80vw 10vw;
 }
 #contact h3 {
 	font-size: 2rem;
@@ -404,4 +520,18 @@ footer a, footer p{
 	font-family: "Montserrat";
 	text-decoration: none;
 	color: var(--black);
+}
+
+/* ~~~~~~~~~~~~~~~~ Tablet Screens ~~~~~~~~~~~~~~~~~~~ */
+@media only screen and (min-width: 768px) {
+	header{
+		display:grid;
+		grid-template-columns: 50vw 50vw;
+		position: fixed;
+		top: 0;
+		max-width: 100vw;
+		background-image: linear-gradient(var(--teal),var(--white))
+	}
+
+
 }

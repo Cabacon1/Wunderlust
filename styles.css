@@ -542,32 +542,56 @@ footer a, footer p{
 	}
 	header {
 		display: grid;
-		grid-template-areas: 
-							"a b b b"
-							"a b b b"
-							"c c c c" ;
+		grid-template-columns: 10vw repeat(3,1fr) 10vw;
 		top: 0;
-		max-width: 100vw;
+		padding-bottom: 5rem;
 		background-image: linear-gradient(var(--teal),var(--white))
 	}
 	header a{
-		grid-area: a;
+		grid-column: 1 / 3;
+		grid-row: 1 /5;
+		align-self: center;
 	}
 	header h1, header p {
-		grid-area: b;
+		grid-column: 3/5;
+		text-align: left;
+		justify-content: left;
+		margin: 0;
 	}  
 
 	header nav {
-		grid-area: c;
+		display: block;
+		visibility: visible;
+		grid-row: 4/-1;
 	}
 	nav {
-		display: grid;
-		grid-template-columns: repeat(4, 25%);
-		justify-items: center;
+		grid-column: 2 / 5;
+		
 	}
 
 	#menu-toggle label {
 		display: none;
+	}
+	
+	#menu-toggle ul {
+		display: grid;
+		grid-column: 1/-1;
+		grid-row: 3 / -1;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
+		background-color: transparent;
+		height: auto;
+		max-height: none;
+	}
+	#menu-toggle ul li{
+		font-weight: bold;
+		background-color: var(--white);
+		padding: 1rem;
+		border: none;
+		z-index: 5;
+	}
+	#menu-toggle ul li:hover {
+		background-color: var(--yellow);
 	}
 
 	/* ~~~~~~~~~~~~~~ Intro~~~~~~~~~~~~~~~~ */

@@ -640,4 +640,19 @@ footer a, footer p{
 		width: 80vw;
 		justify-content: space-between;
 	}
+
+/* ~~~~~~~~~~~~~~~Contact US~~~~~~~~~~~~~~~ */
+
+	#contact form{ 
+		width: 100%;
+    }
+	
+	#contact form fieldset {
+		display: flex;
+	}
+
+	#contact Form fieldset label{
+		margin: auto;
+	}
+
 }

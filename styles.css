@@ -261,12 +261,12 @@ h2 {
 }
 
 /* ~~~~~~~~~~ Hamburger ~~~~~~~~~~~~~~~~~ */
-#menu-toggle::before,
+/* #menu-toggle::before,
 #menu-toggle::after,
 #menu-toggle input {
 	content: "";
 	background-color: var(--yellow);
-}
+} */
 
 #menu-toggle {
 	/* display: inline-block;*/
@@ -785,6 +785,7 @@ footer p {
 	}
 
 	#menu-toggle ul {
+		top: 0;
 		right: 0;
 		width: max-content;
 	}

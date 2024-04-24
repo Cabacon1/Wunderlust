@@ -559,13 +559,9 @@ footer a, footer p{
 		margin: 0;
 	}  
 
-	header nav {
-		display: block;
-		visibility: visible;
-		grid-row: 4/-1;
-	}
-	nav {
+	nav{
 		grid-column: 2 / 5;
+		grid-template-columns: 10vw 80vw 10vw;
 		
 	}
 
@@ -575,13 +571,14 @@ footer a, footer p{
 	
 	#menu-toggle ul {
 		display: grid;
-		grid-column: 1/-1;
-		grid-row: 3 / -1;
 		grid-template-columns: repeat(4, 1fr);
 		gap: 2rem;
+		grid-column: 2/3;
 		background-color: transparent;
 		height: auto;
+		max-width: 80vw;
 		max-height: none;
+		left: auto;
 	}
 	#menu-toggle ul li{
 		font-weight: bold;
@@ -659,7 +656,7 @@ footer a, footer p{
 		padding:  1rem 10vw;
 	}
 	#about div{
-		grid-template-columns: repeat(4, auto);
+		grid-template-columns: repeat(4, 15vw);
 		grid-template-rows: auto;
 		width: 80vw;
 		justify-content: space-between;
@@ -678,10 +675,83 @@ footer a, footer p{
 	#contact Form fieldset label{
 		margin: auto;
 	}
+	
+	#contact form [name="mySubmit"] {
+		width: 30vw;
+		margin-left: 62.5%;
+	}
 
 	/* ~~~~~~~~~~~~~ FOOTER~~~~~~~~~ */
 	footer {
 		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	/* ~~~~~~~~~~~~~~Intro~~~~~~~~~~~~~~~~~ */
+	/* #intro {
+		padding:  1rem 10vw;
+		display: grid;
+		grid-template-columns: 40vw auto;
+	} */
+	/* #intro h2{
+		display: flex
+	}
+	#intro h2, #intro p{
+		display: inline-block;
+		grid-column: 1/2;
+	}
+	 */
+	 article section{
+		display: none;
+	 }
+
+	 h2 {
+		margin: 0;
+	 }
+	 
+	#intro {
+		display: grid;
+		grid-template-areas: 
+							"a  c c"
+							"b  c c"
+							"b  c c";
+		gap: 1rem;
+	}
+
+	#intro #img-grid{
+		grid-column: 2/-1;
+		grid-row: 1/-1;
+	}
+
+	/* ~~~~~~~~~~~~~~PLAN~~~~~~~~~~~~~~~ */
+	/* #plan {
+	padding: 3rem 10vw;	
+	} */
+	#plan div{
+		display: flex;
+		justify-content: space-between;
+	}
+	#plan div section{
+		display: inline-grid;
+		width: 25%;
+	}
+	#plan img{
+		width: 60%;
+	}
+
+	/* ~~~~~~~~~~~~~~~~Testimonials~~~~~~~~~~~~~~~~ */
+	#testimonials div {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	/* ~~~~~~~~~~~~~~~~~~~~~~About~~~~~~~~~~~~~~~~~~~~~~ */
+	/* #about {
+		padding: ;
+	} */
+	#about div{
 		justify-content: center;
 		align-items: center;
 	}

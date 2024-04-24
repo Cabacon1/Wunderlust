@@ -1,11 +1,13 @@
 /* Chad Bacon */
 /* Git 414 2024 Spring B */
 
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -137,7 +139,7 @@ table {
 	border-spacing: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
+
 
 /* After Reset */
 :root {

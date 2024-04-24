@@ -758,11 +758,43 @@ footer p {
 		grid-column: 1/2;
 	}
 	 */
-	
+	header {
+		grid-template-columns: 20vw 40vw 40vw;
+		justify-items: start;
+	}
+
+	header a {
+		grid-column: 1/2;
+		margin: auto;
+	}
+
+	header h1,
+	header p {
+		grid-column: 2/4;
+	}
+
+	header nav {
+		grid-column: 3/-1;
+		grid-row: 1/-1;
+		display: block;
+	}
+
+	#menu-toggle ul {
+		right: 0;
+		width: max-content;
+	}
+
+	#menu-toggle ul li {
+		padding: .5rem 1rem;
+
+	}
+
+
 	h2 {
 		margin: 0;
 	}
 
+	/* ~~~~~~~~~~~~~Intro~~~~~~~~~~~~~~ */
 	#intro {
 		display: grid;
 		grid-template-areas:
@@ -779,8 +811,9 @@ footer p {
 
 	/* ~~~~~~~~~~~~~~PLAN~~~~~~~~~~~~~~~ */
 	#plan {
-	padding: 3rem 10vw;	
+		padding: 3rem 10vw;
 	}
+
 	#plan div {
 		display: flex;
 		justify-content: space-between;
@@ -799,7 +832,7 @@ footer p {
 	#testimonials {
 		padding: 3rem 10vw;
 	}
-	
+
 	#testimonials div {
 		grid-template-columns: repeat(4, 1fr);
 	}
@@ -808,6 +841,7 @@ footer p {
 	#about {
 		padding: 3rem 10vw;
 	}
+
 	#about div {
 		justify-content: center;
 		align-items: center;
@@ -816,59 +850,66 @@ footer p {
 	/* ~~~~~~~~~~Contact~~~~~~~~~~ */
 	#contact {
 		padding-top: 3rem;
-		grid-template-areas: 
-							"a a a"
-							"b c d"
-							"b c d"
-							"b c e";
+		grid-template-areas:
+			"a a a"
+			"b c d"
+			"b c d"
+			"b c e";
 	}
-	#contact form{
+
+	#contact form {
 		display: grid;
 		grid-template-columns: repeat(3, 33.3%);
-		grid-template-areas: 
-		"a a a"
-		"b c d"
-		"b c d"
-		"b c e";
+		grid-template-areas:
+			"a a a"
+			"b c d"
+			"b c d"
+			"b c e";
 		gap: 1rem 1rem;
 	}
+
 	#contact h3 {
 		grid-area: a;
 	}
-	
+
 	#contact label {
 		display: inline-block;
 		width: 100%;
 	}
-	
-	#contact form input{
+
+	#contact form input {
 		display: inline-block;
 		width: 90%;
 	}
+
 	/* #contact fieldset{
 		padding-bottom: 1rem;
 	} */
-	#contact form fieldset input{
+	#contact form fieldset input {
 		margin: 0 .5rem .5rem;
 		width: 2.2rem;
 	}
+
 	#contact form fieldset label {
-       padding-right: .5rem;
-    }
+		padding-right: .5rem;
+	}
+
 	#names {
 		display: block;
 		grid-area: b;
 		width: 100%;
 	}
-	#nums{
+
+	#nums {
 		grid-area: c;
 	}
+
 	#selects {
 		grid-area: d;
 		width: 90%;
 	}
 
-	#contact form [name="mySubmit"]{
+	#contact form [name="mySubmit"] {
 		margin-left: 50%;
 		width: 50%;
 	}
@@ -876,8 +917,17 @@ footer p {
 	#mySubmit {
 		grid-area: e;
 	}
- 	#contact .radio-label {
+
+	#contact .radio-label {
 		font-size: .8rem;
 	}
-	
+
+	footer {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	footer p {
+		grid-column: 1/3;
+	}
 }

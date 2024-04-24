@@ -231,7 +231,8 @@ header {
 	grid-template-columns: repeat(2, 50vw);
 	grid-template-rows: auto auto auto;
 	justify-items: stretch;
-	background-image: linear-gradient(var(--teal), var(--white))
+	align-items: center;
+	background-image: linear-gradient(var(--teal), var(--white));
 }
 
 header h1 {
@@ -302,7 +303,7 @@ h2 {
 
 #menu-toggle ul li {
 	max-width: 100%;
-	background-color: var(--blue);
+	background-color: var(--teal);
 	padding: 2rem;
 	border-bottom: 1px solid var(--black);
 }
@@ -316,11 +317,15 @@ h2 {
 #menu-toggle input:checked~ul {
 	max-height: 100%;
 	max-width: 100vw;
+	background-color: var(--white);
 }
 
-#menu-toggle input:checked {
+#menu-toggle input:checked~ label {
+	position: absolute;
+	top: 1rem;
+	left: 0;
 	width: 100vw;
-	background-color: var(--dark-gray);
+	background-color: var(--black);
 	color: var(--white);
 }
 

@@ -789,6 +789,10 @@ footer p {
 
 	}
 
+	h1{
+		padding-top: 1rem;
+		padding-left: 0;
+	}
 
 	h2 {
 		margin: 0;

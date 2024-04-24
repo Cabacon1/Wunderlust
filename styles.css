@@ -502,9 +502,6 @@ select {
 	margin-bottom: 1em;
 	border: 2px solid var(--purple);
 	width: 100%;
-	-ms-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
 }
 
@@ -535,7 +532,6 @@ legend {
 
 .custom-select select {
 	box-sizing: content-box;
-	-webkit-box-sizing: content-box;
 }
 
 /* select {
